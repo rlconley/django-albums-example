@@ -26,6 +26,8 @@ from main import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='home'),
+    path('album/new/', views.add_album, name='add_album'),
+    path('artist/new/', views.add_artist, name='add_artist'),
 ] + debug_toolbar_urls()
 
 if settings.DEBUG:
