@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-(ibo&jord-gb6o*rsu!99nbkv9sp!7q0lx1u_+q7)t^7to$iv+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://django-albums-example-5a51a789ff73.herokuapp.com/']
 
 
 # Application definition
@@ -141,6 +141,10 @@ MEDIA_ROOT = BASE_DIR / 'media'
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
+
+DEBUG_TOOLBAR_CONFIG = {
+    'SHOW_TOOLBAR_CALLBACK': lambda request: True,
+}
 
 import django_heroku
 django_heroku.settings(locals())
