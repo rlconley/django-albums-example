@@ -17,6 +17,7 @@
             <div class="card-image">
                 {% if album.cover %}
                 <img src="{{ album.cover.url }}" alt="{{ album.title }}">
+                {% endif %}
             </div>
             <div class="card-content">
                 <p>{{ album }} | {{ album.artist }}</p>
