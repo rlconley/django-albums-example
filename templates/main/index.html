@@ -15,6 +15,7 @@
         {% for album in albums %}
         <div class="card medium col s2 m6 l4 center-align">
             <div class="card-image">
+                {% if album.cover %}
                 <img src="{{ album.cover.url }}" alt="{{ album.title }}">
             </div>
             <div class="card-content">
